@@ -1,0 +1,49 @@
+0.
+pwd
+
+1.
+cd 2/7 
+
+2.
+cd ../..
+
+3.
+cd ../7/2
+
+4.
+ls 2/7
+
+5.
+ls 2 2/7
+
+6.
+ls -d *e*
+
+7.
+ls [A-Z]*.txt
+
+8.
+ls -r [A-Z]*.txt
+
+9.
+ls -1 -i [A-Z]*.txt
+
+10.
+ls -a
+
+11.
+The amount of lines in the output will always be less than the total number of words appended to the file (in this case 75). However, the amount of lines depends on the randomly chosen words.
+Uniq will filter out duplicate words from the output but only if they are beside each other (or in this case under/above each other) in the file. Since the file is unsorted, the number of output
+lines is heavily dependent on the random order of the words chosen.
+
+12.
+sort -r unsorted.txt > sorted.txt
+
+13.
+ls -lst | head
+
+14.
+ls -lsrt | tail
+
+15.
+date -I"minutes" | cut -d '-' -f 3,4 | cut -d ':' -f 1,2 | cut -d '-' -f 1 | cut -d 'T' -f 2 > time.txt
